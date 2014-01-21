@@ -7,9 +7,9 @@
 //
 
 #import "TiSynchronousViewController.h"
-#import "TiForm.h"
-#import "TiRequest.h"
-#import "TiResponse.h"
+#import "TiHTTPPostForm.h"
+#import "TiHTTPRequest.h"
+#import "TiHTTPResponse.h"
 
 @interface TiSynchronousViewController ()
 
@@ -57,12 +57,13 @@
     [[self requestField] resignFirstResponder];
     [[self responseField] setText:@"Loading, please wait..."];
     
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setMethod:[self method]];
     [request setUrl:[NSURL URLWithString:[[self requestField] text]]];
-    [request send:nil async:NO];
+    [request setSynchronous:YES];
+    [request send];
     
-    TiResponse *response = [request response];
+    TiHTTPResponse *response = [request response];
     [[self responseField] setText:[response responseString]];
     
     PELog(@"[SYNC] error: %@",[[response error] localizedDescription]);

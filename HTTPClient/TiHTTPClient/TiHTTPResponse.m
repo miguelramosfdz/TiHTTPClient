@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Pedro Enrique. All rights reserved.
 //
 
-#import "TiResponse.h"
+#import "TiHTTPResponse.h"
 
-@implementation TiResponse
+@implementation TiHTTPResponse
 
 @synthesize url = _url;
 @synthesize status = _status;

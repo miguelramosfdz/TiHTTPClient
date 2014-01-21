@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TiForm : NSObject
+@interface TiHTTPPostForm : NSObject
 {
     NSMutableDictionary *_requestFormDictionay;
     NSMutableArray *_requestFilesArray;

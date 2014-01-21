@@ -16,20 +16,20 @@ typedef enum {
 } TiRequestAuth;
 
 
-@class TiResponse;
-@class TiRequest;
-@class TiForm;
+@class TiHTTPResponse;
+@class TiHTTPRequest;
+@class TiHTTPPostForm;
 
-@protocol TiRequestDelegate <NSObject>
+@protocol TiHTTPRequestDelegate <NSObject>
 @optional
--(void)tiRequest:(TiRequest*)request onLoad:(TiResponse*)response;
--(void)tiRequest:(TiRequest*)request onError:(TiResponse*)response;
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response;
--(void)tiRequest:(TiRequest *)request onReadyStateChage:(TiResponse *)response;
+-(void)tiRequest:(TiHTTPRequest*)request onLoad:(TiHTTPResponse*)response;
+-(void)tiRequest:(TiHTTPRequest*)request onError:(TiHTTPResponse*)response;
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response;
+-(void)tiRequest:(TiHTTPRequest *)request onReadyStateChage:(TiHTTPResponse *)response;
 
 @end
 
-@interface TiRequest : NSObject<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
+@interface TiHTTPRequest : NSObject<NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 {
     NSMutableURLRequest *_request;
     long long _expectedResponseLength;
@@ -40,14 +40,16 @@ typedef enum {
 @property(nonatomic, retain) NSString *filePath;
 @property(nonatomic, retain) NSString *requestUsername;
 @property(nonatomic, retain) NSString *requestPassword;
-@property(nonatomic, readonly) TiResponse* response;
-@property(nonatomic, assign) NSObject<TiRequestDelegate>* delegate;
+@property(nonatomic, retain) TiHTTPPostForm *postForm;
+
+@property(nonatomic, readonly) TiHTTPResponse* response;
+@property(nonatomic, assign) NSObject<TiHTTPRequestDelegate>* delegate;
 @property(nonatomic) NSTimeInterval timeout;
 @property(nonatomic) BOOL sendDefaultCookies;
+@property(nonatomic) BOOL redirects;
+@property(nonatomic) BOOL synchronous;
 @property(nonatomic) TiRequestAuth authType;
 
 
--(void)send:(TiForm*)postForm async:(BOOL)synchronous;
--(void)send:(TiForm*)postForm;
 -(void)send;
 @end

@@ -9,7 +9,7 @@
 #import "TiTestsViewController.h"
 #import "TiBaseViewController.h"
 #import "TiWebColor.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
 static NSArray* TestsArray = nil;
 
@@ -27,7 +27,8 @@ static NSArray* TestsArray = nil;
                            @"tests" : @[
                                    @{@"title": @"Simple get", @"viewController": @"SimpleGet"},
                                    @{@"title": @"Progress", @"viewController": @"GetProgress"},
-                                   @{@"title": @"Response Headers", @"viewController": @"GetHeaders"}
+                                   @{@"title": @"Response Headers", @"viewController": @"GetHeaders"},
+                                   @{@"title": @"Redirect", @"viewController": @"Redirect"}
                                    ]
                            }
                        ,

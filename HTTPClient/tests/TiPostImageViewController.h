@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiPostImageViewController : TiBaseViewController<TiRequestDelegate, UIImagePickerControllerDelegate>
+@interface TiPostImageViewController : TiBaseViewController<TiHTTPRequestDelegate, UIImagePickerControllerDelegate>
 
 @property (retain, nonatomic) IBOutlet UIImageView *myImage;
 @property (retain, nonatomic) IBOutlet UIProgressView *progressBar;

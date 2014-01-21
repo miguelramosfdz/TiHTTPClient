@@ -7,8 +7,8 @@
 //
 
 #import "TiPostJsonStringViewController.h"
-#import "TiResponse.h"
-#import "TiForm.h"
+#import "TiHTTPResponse.h"
+#import "TiHTTPPostForm.h"
 
 @interface TiPostJsonStringViewController ()
 
@@ -47,28 +47,29 @@
                             [[self key2Field] text]: [[self value2Field] text],
                             [[self key3Field] text]: [[self value3Field] text]
                             };
-    TiForm *form = [[[TiForm alloc] init] autorelease];
+    TiHTTPPostForm *form = [[[TiHTTPPostForm alloc] init] autorelease];
     [form setJSONData:dict];
     
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setUrl:[NSURL URLWithString:
                      [NSString stringWithFormat:@"http://httpbin.org/%@", [[self method] lowercaseString]]
                      ]];
     [request setMethod:[self method]];
-    [request send:form];
+    [request setPostForm:form];
+    [request send];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"Success!", @"See log for response");
     NSLog(@"%@", [response responseDictionary]);
 }
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response
 {
     
 }
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

@@ -7,7 +7,7 @@
 //
 
 #import "TiGetProgressViewController.h"
-#import "TiResponse.h"
+#import "TiHTTPResponse.h"
 @interface TiGetProgressViewController ()
 
 @end
@@ -37,22 +37,22 @@
 - (IBAction)onButtonClick:(id)sender
 {
     [[self progressBar] setProgress:0];
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setMethod:[self method]];
     [request setUrl:[NSURL URLWithString:@"http://cdn.petkaria.com/pictures/z.about.com/d/cameras/1/0/u/1/bigcat.JPG"]];
     [request send];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"Success!", @"Image downloaded!");
 }
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response
 {
     [[self progressBar]setProgress:[response progress]];
 }
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

@@ -7,8 +7,8 @@
 //
 
 #import "TiPostImageFormViewController.h"
-#import "TiResponse.h"
-#import "TiForm.h"
+#import "TiHTTPResponse.h"
+#import "TiHTTPPostForm.h"
 
 @interface TiPostImageFormViewController ()
 
@@ -59,7 +59,7 @@
     [[self firstNameField] resignFirstResponder];
     [[self lastNameField] resignFirstResponder];
     
-    TiForm *form = [[[TiForm alloc] init] autorelease];
+    TiHTTPPostForm *form = [[[TiHTTPPostForm alloc] init] autorelease];
     [form addHeaderKey:@"Accept" andHeaderValue:@"application.json"];
     [form addFormKey:@"first_name" andValue:[[self firstNameField] text]];
     [form addFormKey:@"last_name" andValue:[[self lastNameField] text]];
@@ -67,13 +67,14 @@
              fileName:@"image.jpeg"
             fieldName:@"photo"];
     
-    TiRequest *request =[[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request =[[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setUrl:[NSURL URLWithString:
                      [NSString stringWithFormat:@"http://httpbin.org/%@", [[self method] lowercaseString]]
                      ]];
     [request setMethod:[self method]];
-    [request send:form];
+    [request setPostForm:form];
+    [request send];
 }
 
 -(void)onImageClick:(id)arg
@@ -93,12 +94,12 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"Success", @"Please see log");
     PELog(@"%@", [response responseDictionary]);

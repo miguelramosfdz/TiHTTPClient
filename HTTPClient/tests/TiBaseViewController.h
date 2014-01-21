@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 @interface TiBaseViewController : UIViewController<UINavigationControllerDelegate>
 
 @property(nonatomic, retain) NSString* method;

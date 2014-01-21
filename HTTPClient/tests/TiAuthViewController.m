@@ -7,7 +7,7 @@
 //
 
 #import "TiAuthViewController.h"
-#import "TiResponse.h"
+#import "TiHTTPResponse.h"
 
 @interface TiAuthViewController ()
 
@@ -68,7 +68,7 @@
 - (IBAction)onButtonClick:(id)sender
 {
     [[self requestField] resignFirstResponder];
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setRequestUsername:@"user"];
     [request setRequestPassword:@"password"];
 
@@ -81,13 +81,13 @@
     [request send];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"Success", @"See log for details");
     [[self responseField] setText:[response responseString]];
 }
 
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

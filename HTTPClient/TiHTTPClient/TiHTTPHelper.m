@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Pedro Enrique. All rights reserved.
 //
 
-#import "TiHelper.h"
+#import "TiHTTPHelper.h"
 
-@implementation TiHelper
+@implementation TiHTTPHelper
 
 static char *alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 

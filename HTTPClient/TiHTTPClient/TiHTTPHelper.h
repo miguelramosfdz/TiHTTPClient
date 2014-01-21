@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TiHelper : NSObject
+@interface TiHTTPHelper : NSObject
 
 +(NSString *)base64encode:(NSData *)plainText;
 

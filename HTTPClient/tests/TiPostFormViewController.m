@@ -7,8 +7,8 @@
 //
 
 #import "TiPostFormViewController.h"
-#import "TiForm.h"
-#import "TiResponse.h"
+#import "TiHTTPPostForm.h"
+#import "TiHTTPResponse.h"
 
 @interface TiPostFormViewController ()
 
@@ -59,7 +59,7 @@
     [[self lastNameField] resignFirstResponder];
     [[self emailField] resignFirstResponder];
     
-    TiForm *postForm = [[[TiForm alloc] init] autorelease];
+    TiHTTPPostForm *postForm = [[[TiHTTPPostForm alloc] init] autorelease];
     
     if([[[self firstNameField] text] length] > 0) {
         [postForm addFormKey:@"first_name" andValue:[[self firstNameField] text]];
@@ -73,26 +73,27 @@
     
     [postForm addHeaderKey:@"Accept" andHeaderValue:@"application/json"];
     
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setUrl:[NSURL URLWithString:
                      [NSString stringWithFormat:@"http://httpbin.org/%@", [[self method] lowercaseString]]
                      ]];
     [request setDelegate:self];
     [request setMethod:[self method]];
-    [request send:postForm];
+    [request setPostForm:postForm];
+    [request send];
     
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"Success!", @"See log for details");
     PELog(@"%@", [response responseDictionary]);
 }
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response
 {
     
 }
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

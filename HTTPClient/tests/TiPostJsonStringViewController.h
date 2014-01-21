@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiPostJsonStringViewController : TiBaseViewController<TiRequestDelegate>
+@interface TiPostJsonStringViewController : TiBaseViewController<TiHTTPRequestDelegate>
 
 @property (retain, nonatomic) IBOutlet UITextField *key1Field;
 @property (retain, nonatomic) IBOutlet UITextField *key2Field;

@@ -16,7 +16,7 @@ typedef enum {
     TiResponseStateDone = 4
 } TiResponseState;
 
-@interface TiResponse : NSObject
+@interface TiHTTPResponse : NSObject
 {
     NSMutableData *_data;
 }

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiGetProgressViewController : TiBaseViewController<TiRequestDelegate>
+@interface TiGetProgressViewController : TiBaseViewController<TiHTTPRequestDelegate>
 @property (retain, nonatomic) IBOutlet UIProgressView *progressBar;
 
 @end

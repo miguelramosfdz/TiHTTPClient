@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiGetHeadersViewController : TiBaseViewController<TiRequestDelegate>
+@interface TiGetHeadersViewController : TiBaseViewController<TiHTTPRequestDelegate>
 
 @property (retain, nonatomic) IBOutlet NSLayoutConstraint *bottomSpace;
 @property (retain, nonatomic) IBOutlet UITextView *responseField;

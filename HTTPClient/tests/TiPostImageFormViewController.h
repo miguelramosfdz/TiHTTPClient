@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
 @interface TiPostImageFormViewController : TiBaseViewController<
 UIImagePickerControllerDelegate,
-TiRequestDelegate,
+TiHTTPRequestDelegate,
 UITextFieldDelegate
 >
 

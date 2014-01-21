@@ -7,7 +7,7 @@
 //
 
 #import "TiGetHeadersViewController.h"
-#import "TiResponse.h"
+#import "TiHTTPResponse.h"
 @interface TiGetHeadersViewController ()
 
 @end
@@ -45,7 +45,7 @@
 - (IBAction)onButtonClick:(id)sender
 {
     [[self requestField] resignFirstResponder];
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setMethod:[self method]];
     [request setUrl:[NSURL URLWithString:[[self requestField] text]]];
@@ -53,12 +53,12 @@
     [[self responseField] setText:@"Loading, please wait..."];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     [[self responseField] setText:[NSString stringWithFormat:@"%@", [response headers]]];
 }
 
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

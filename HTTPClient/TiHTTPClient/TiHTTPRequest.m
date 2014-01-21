@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Pedro Enrique. All rights reserved.
 //
 
-#import "TiRequest.h"
-#import "TiResponse.h"
-#import "TiForm.h"
-#import "TiHelper.h"
+#import "TiHTTPRequest.h"
+#import "TiHTTPResponse.h"
+#import "TiHTTPPostForm.h"
+#import "TiHTTPHelper.h"
 
-@implementation TiRequest
+@implementation TiHTTPRequest
 @synthesize url = _url;
 @synthesize method = _method;
 @synthesize response = _response;
@@ -28,6 +28,7 @@
     RELEASE_TO_NIL(_filePath)
     RELEASE_TO_NIL(_requestUsername)
     RELEASE_TO_NIL(_requestPassword)
+    RELEASE_TO_NIL(_postForm)
     [super dealloc];
 }
 - (id)init
@@ -42,29 +43,20 @@
 -(void)initialize
 {
     [self setSendDefaultCookies:YES];
+    [self setRedirects:YES];
     _request = [[NSMutableURLRequest alloc] init];
     [_request setCachePolicy:NSURLRequestReloadIgnoringCacheData];
-    _response = [[TiResponse alloc] init];
+    _response = [[TiHTTPResponse alloc] init];
     [_response setReadyState: TiResponseStateUnsent];
 }
 
 -(void)send
 {
-    [self send:nil async:YES];
-}
-
--(void)send:(TiForm*)postForm
-{
-    [self send:postForm async:YES];
-}
-
--(void)send:(TiForm*)postForm async:(BOOL)asynchronous
-{
-    if(postForm != nil) {
-        NSData *data = [postForm requestData];
+    if([self postForm] != nil) {
+        NSData *data = [[self postForm] requestData];
         [_request setHTTPBody:data];
         PELog(@"Data: %@", [NSString stringWithUTF8String: [data bytes]]);
-        NSDictionary *headers = [postForm requestHeaders];
+        NSDictionary *headers = [[self postForm] requestHeaders];
         for (NSString* key in headers)
         {
             [_request setValue:[headers valueForKey:key] forHTTPHeaderField:key];
@@ -73,7 +65,7 @@
     }
     PELog(@"URL: %@", [self url]);
     [_request setURL: [self url]];
-
+    
     if([self timeout] > 0) {
         [_request setTimeoutInterval:[self timeout]];
     }
@@ -83,15 +75,7 @@
     }
     [_request setHTTPShouldHandleCookies:[self sendDefaultCookies]];
     
-    if(asynchronous) {
-        NSURLConnection *c = [[[NSURLConnection alloc] initWithRequest: _request delegate:self] autorelease];
-        [_response setRequest:_request];
-        [_response setReadyState:TiResponseStateOpened];
-        if([_delegate respondsToSelector:@selector(tiRequest:onReadyStateChage:)]) {
-            [_delegate tiRequest:self onReadyStateChage:_response];
-        }
-        [c start];
-    } else {
+    if([self synchronous]) {
         NSURLResponse *response;
         NSError *error = nil;
         NSData *responseData = [NSURLConnection sendSynchronousRequest:_request returningResponse:&response error:&error];
@@ -101,12 +85,23 @@
         [_response setRequest:_request];
         [_response setReadyState:TiResponseStateDone];
         [_response setConnected:NO];
+    } else {
+        NSURLConnection *c = [[[NSURLConnection alloc] initWithRequest: _request delegate:self] autorelease];
+        [_response setRequest:_request];
+        [_response setReadyState:TiResponseStateOpened];
+        if([_delegate respondsToSelector:@selector(tiRequest:onReadyStateChage:)]) {
+            [_delegate tiRequest:self onReadyStateChage:_response];
+        }
+        [c start];
     }
     
 }
 
+
 -(void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
+    if([self requestPassword] == nil || [self requestUsername] == nil) return;
+    
     if ([challenge previousFailureCount]) {
         PELog(@"%s %@", __PRETTY_FUNCTION__, @"previousFailureCount");
         [[challenge sender] cancelAuthenticationChallenge:challenge];
@@ -130,13 +125,42 @@
     PELog(@"%s", __PRETTY_FUNCTION__);
 }
 
+-(NSURLRequest*)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response
+{
+    PELog(@"Code %i Redirecting from: %@ to: %@",[(NSHTTPURLResponse*)response statusCode], [_request URL] ,[request URL]);
+    [_response setConnected:YES];
+    [_response setResponse: response];
+    if(![self redirects] && [_response status] != 0)
+    {
+        [_response setRequest: request];
+        return nil;
+    }
+    
+    //http://tewha.net/2012/05/handling-302303-redirects/
+    if (response) {
+        NSMutableURLRequest *r = [[_request mutableCopy] autorelease];
+        [r setURL: [request URL]];
+        RELEASE_TO_NIL(_request);
+        _request = [r retain];
+        return r;
+    } else {
+        return request;
+    }
+}
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    PELog(@"1 %s %@", __PRETTY_FUNCTION__, [NSHTTPURLResponse localizedStringForStatusCode:[(NSHTTPURLResponse*)response statusCode]]);
-
+    PELog(@"%s", __PRETTY_FUNCTION__);
     [_response setReadyState:TiResponseStateHeaders];
     [_response setConnected:YES];
-    [_response setResponse:response];
+    [_response setResponse: response];
+    if([_response status] == 0) {
+        [self connection:connection
+        didFailWithError:[NSError errorWithDomain: [_response location]
+                                             code: [_response status]
+                                         userInfo: @{NSLocalizedDescriptionKey: [NSHTTPURLResponse localizedStringForStatusCode:[(NSHTTPURLResponse*)response statusCode]]}
+                          ]];
+        return;
+    }
     _expectedResponseLength = [response expectedContentLength];
     
     if([_delegate respondsToSelector:@selector(tiRequest:onReadyStateChage:)]) {
@@ -165,6 +189,7 @@
 
 -(void)connection:(NSURLConnection *)connection didSendBodyData:(NSInteger)bytesWritten totalBytesWritten:(NSInteger)totalBytesWritten totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite
 {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
     if([_response readyState] != TiResponseStateLoading) {
         [_response setReadyState:TiResponseStateLoading];
         if([_delegate respondsToSelector:@selector(tiRequest:onReadyStateChage:)]) {

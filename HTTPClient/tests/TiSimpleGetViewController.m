@@ -7,7 +7,7 @@
 //
 
 #import "TiSimpleGetViewController.h"
-#import "TiResponse.h"
+#import "TiHTTPResponse.h"
 
 @interface TiSimpleGetViewController ()
 
@@ -43,7 +43,7 @@
     [[self addressField] resignFirstResponder];
     [[self responseField] setText:@"Loading, please wait..."];
     
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setMethod:[self method]];
     [request setUrl:[NSURL URLWithString:[[self addressField] text]]];
@@ -51,7 +51,7 @@
     
 }
 
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response
 {
     PELog(@"%s", __PRETTY_FUNCTION__);
     [[self responseField] setText:
@@ -59,19 +59,19 @@
      ];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     PELog(@"%s", __PRETTY_FUNCTION__);
     [[self responseField] setText: [response responseString]];
 }
 
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     [[self responseField] setText:[[response error] localizedDescription]];
     Alert(@"Error", [[response error] localizedDescription]);
 }
 
--(void)tiRequest:(TiRequest *)request onReadyStateChage:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onReadyStateChage:(TiHTTPResponse *)response
 {
     PELog(@"Read State: %i", [response readyState]);
 }

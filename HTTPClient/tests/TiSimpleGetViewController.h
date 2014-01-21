@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiSimpleGetViewController : TiBaseViewController<TiRequestDelegate>
+@interface TiSimpleGetViewController : TiBaseViewController<TiHTTPRequestDelegate>
 
 @property (retain, nonatomic) IBOutlet UITextField *addressField;
 @property (retain, nonatomic) IBOutlet UITextView *responseField;

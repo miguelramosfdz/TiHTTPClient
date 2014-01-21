@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TiBaseViewController.h"
-#import "TiRequest.h"
+#import "TiHTTPRequest.h"
 
-@interface TiPostFormViewController : TiBaseViewController<TiRequestDelegate>
+@interface TiPostFormViewController : TiBaseViewController<TiHTTPRequestDelegate>
 
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (retain, nonatomic) IBOutlet UITextField *firstNameField;

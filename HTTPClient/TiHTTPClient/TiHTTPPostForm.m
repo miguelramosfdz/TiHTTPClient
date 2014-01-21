@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Pedro Enrique. All rights reserved.
 //
 
-#import "TiForm.h"
+#import "TiHTTPPostForm.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
 #define FORM_SPACE @"\r\n";
 
-@implementation TiForm
+@implementation TiHTTPPostForm
 
 
 - (void)dealloc

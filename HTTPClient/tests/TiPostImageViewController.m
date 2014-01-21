@@ -7,8 +7,8 @@
 //
 
 #import "TiPostImageViewController.h"
-#import "TiForm.h"
-#import "TiResponse.h"
+#import "TiHTTPPostForm.h"
+#import "TiHTTPResponse.h"
 
 @interface TiPostImageViewController ()
 
@@ -51,18 +51,19 @@
 {
     UIImage *image = [[self myImage] image];
 
-    TiForm *form = [[[TiForm alloc] init] autorelease];
+    TiHTTPPostForm *form = [[[TiHTTPPostForm alloc] init] autorelease];
     [form addFormData: UIImageJPEGRepresentation(image, 0.7)
              fileName:@"image.jpeg"
             fieldName:@"image"];
     
-    TiRequest *request = [[[TiRequest alloc] init] autorelease];
+    TiHTTPRequest *request = [[[TiHTTPRequest alloc] init] autorelease];
     [request setDelegate:self];
     [request setMethod:[self method]];
     [request setUrl:[NSURL URLWithString:
                      [NSString stringWithFormat:@"http://httpbin.org/%@", [[self method] lowercaseString]]
                      ]];
-    [request send:form];
+    [request setPostForm:form];
+    [request send];
     [[self progressBar] setProgress:0];
 }
 
@@ -73,17 +74,17 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)tiRequest:(TiRequest *)request onLoad:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onLoad:(TiHTTPResponse *)response
 {
     Alert(@"OnLoad", @"See log for details");
     NSLog(@"%@", [response responseDictionary]);
 }
 
--(void)tiRequest:(TiRequest *)request onDataStream:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onDataStream:(TiHTTPResponse *)response
 {
     [[self progressBar] setProgress:[response progress]];
 }
--(void)tiRequest:(TiRequest *)request onError:(TiResponse *)response
+-(void)tiRequest:(TiHTTPRequest *)request onError:(TiHTTPResponse *)response
 {
     Alert(@"Error", [[response error] localizedDescription]);
 }

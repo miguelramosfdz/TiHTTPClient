@@ -11,28 +11,8 @@
 		B63510B4188A2E670086BDC8 /* TiTestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63510B3188A2E670086BDC8 /* TiTestsViewController.m */; };
 		B63510B9188A331A0086BDC8 /* h.m in Sources */ = {isa = PBXBuildFile; fileRef = B63510B6188A32EA0086BDC8 /* h.m */; };
 		B63510BA188A331B0086BDC8 /* h.m in Sources */ = {isa = PBXBuildFile; fileRef = B63510B6188A32EA0086BDC8 /* h.m */; };
-		B63510BE188B74130086BDC8 /* TiSimpleGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63510BC188B74130086BDC8 /* TiSimpleGetViewController.m */; };
-		B63510BF188B74130086BDC8 /* TiSimpleGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63510BD188B74130086BDC8 /* TiSimpleGetViewController.xib */; };
-		B63510C4188B7BAC0086BDC8 /* TiPostFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63510C2188B7BAC0086BDC8 /* TiPostFormViewController.m */; };
-		B63510C5188B7BAC0086BDC8 /* TiPostFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63510C3188B7BAC0086BDC8 /* TiPostFormViewController.xib */; };
-		B6528BF8188D963A00775C2A /* TiGetHeadersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6528BF6188D963A00775C2A /* TiGetHeadersViewController.m */; };
-		B6528BF9188D963A00775C2A /* TiGetHeadersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6528BF7188D963A00775C2A /* TiGetHeadersViewController.xib */; };
 		B6528BFD188DA13500775C2A /* TiWebColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6528BFC188DA13500775C2A /* TiWebColor.m */; };
-		B6528C01188DB82C00775C2A /* TiSynchronousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6528BFF188DB82C00775C2A /* TiSynchronousViewController.m */; };
-		B6528C02188DB82C00775C2A /* TiSynchronousViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6528C00188DB82C00775C2A /* TiSynchronousViewController.xib */; };
-		B676F0BB188B86090095B9BD /* TiBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F0BA188B86090095B9BD /* TiBaseViewController.m */; };
-		B676F0BF188B93B50095B9BD /* TiPostImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F0BD188B93B50095B9BD /* TiPostImageViewController.m */; };
-		B676F0C0188B93B50095B9BD /* TiPostImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B676F0BE188B93B50095B9BD /* TiPostImageViewController.xib */; };
 		B676F0C2188B948B0095B9BD /* photoDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = B676F0C1188B948B0095B9BD /* photoDefault.png */; };
-		B676F0C6188C8C7E0095B9BD /* TiPostImageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F0C4188C8C7E0095B9BD /* TiPostImageFormViewController.m */; };
-		B676F0C7188C8C7E0095B9BD /* TiPostImageFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B676F0C5188C8C7E0095B9BD /* TiPostImageFormViewController.xib */; };
-		B676F0CB188CB3850095B9BD /* TiPostJsonStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F0C9188CB3850095B9BD /* TiPostJsonStringViewController.m */; };
-		B676F0CC188CB3850095B9BD /* TiPostJsonStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B676F0CA188CB3850095B9BD /* TiPostJsonStringViewController.xib */; };
-		B676F0D0188CC0700095B9BD /* TiGetProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676F0CE188CC06F0095B9BD /* TiGetProgressViewController.m */; };
-		B676F0D1188CC0700095B9BD /* TiGetProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B676F0CF188CC06F0095B9BD /* TiGetProgressViewController.xib */; };
-		B6A19814188DD19500781FFA /* TiAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A19812188DD19500781FFA /* TiAuthViewController.m */; };
-		B6A19815188DD19500781FFA /* TiAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A19813188DD19500781FFA /* TiAuthViewController.xib */; };
-		B6A19818188DDBD300781FFA /* TiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A19817188DDBD300781FFA /* TiHelper.m */; };
 		B6A202081880746E0022558E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A202071880746E0022558E /* Foundation.framework */; };
 		B6A2020A1880746E0022558E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A202091880746E0022558E /* CoreGraphics.framework */; };
 		B6A2020C1880746E0022558E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2020B1880746E0022558E /* UIKit.framework */; };
@@ -45,9 +25,31 @@
 		B6A202291880746F0022558E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2020B1880746E0022558E /* UIKit.framework */; };
 		B6A202311880746F0022558E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A2022F1880746F0022558E /* InfoPlist.strings */; };
 		B6A202331880746F0022558E /* HTTPClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A202321880746F0022558E /* HTTPClientTests.m */; };
-		B6A202A9188877D80022558E /* TiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A202A8188877D80022558E /* TiRequest.m */; };
-		B6A202AC18887B5A0022558E /* TiResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A202AB18887B5A0022558E /* TiResponse.m */; };
-		B6A202AF1889E18D0022558E /* TiForm.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A202AE1889E18D0022558E /* TiForm.m */; };
+		B6B59F8E188F15F300F2646F /* TiAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F6F188F15F300F2646F /* TiAuthViewController.m */; };
+		B6B59F8F188F15F300F2646F /* TiAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F70188F15F300F2646F /* TiAuthViewController.xib */; };
+		B6B59F90188F15F300F2646F /* TiBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F72188F15F300F2646F /* TiBaseViewController.m */; };
+		B6B59F91188F15F300F2646F /* TiGetHeadersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F74188F15F300F2646F /* TiGetHeadersViewController.m */; };
+		B6B59F92188F15F300F2646F /* TiGetHeadersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F75188F15F300F2646F /* TiGetHeadersViewController.xib */; };
+		B6B59F93188F15F300F2646F /* TiGetProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F77188F15F300F2646F /* TiGetProgressViewController.m */; };
+		B6B59F94188F15F300F2646F /* TiGetProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F78188F15F300F2646F /* TiGetProgressViewController.xib */; };
+		B6B59F95188F15F300F2646F /* TiPostFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F7A188F15F300F2646F /* TiPostFormViewController.m */; };
+		B6B59F96188F15F300F2646F /* TiPostFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F7B188F15F300F2646F /* TiPostFormViewController.xib */; };
+		B6B59F97188F15F300F2646F /* TiPostImageFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F7D188F15F300F2646F /* TiPostImageFormViewController.m */; };
+		B6B59F98188F15F300F2646F /* TiPostImageFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F7E188F15F300F2646F /* TiPostImageFormViewController.xib */; };
+		B6B59F99188F15F300F2646F /* TiPostImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F80188F15F300F2646F /* TiPostImageViewController.m */; };
+		B6B59F9A188F15F300F2646F /* TiPostImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F81188F15F300F2646F /* TiPostImageViewController.xib */; };
+		B6B59F9B188F15F300F2646F /* TiPostJsonStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F83188F15F300F2646F /* TiPostJsonStringViewController.m */; };
+		B6B59F9C188F15F300F2646F /* TiPostJsonStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F84188F15F300F2646F /* TiPostJsonStringViewController.xib */; };
+		B6B59F9D188F15F300F2646F /* TiRedirectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F86188F15F300F2646F /* TiRedirectViewController.m */; };
+		B6B59F9E188F15F300F2646F /* TiRedirectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F87188F15F300F2646F /* TiRedirectViewController.xib */; };
+		B6B59F9F188F15F300F2646F /* TiSimpleGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F89188F15F300F2646F /* TiSimpleGetViewController.m */; };
+		B6B59FA0188F15F300F2646F /* TiSimpleGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F8A188F15F300F2646F /* TiSimpleGetViewController.xib */; };
+		B6B59FA1188F15F300F2646F /* TiSynchronousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59F8C188F15F300F2646F /* TiSynchronousViewController.m */; };
+		B6B59FA2188F15F300F2646F /* TiSynchronousViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B59F8D188F15F300F2646F /* TiSynchronousViewController.xib */; };
+		B6B59FAB188F16CB00F2646F /* TiHTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59FA4188F16CB00F2646F /* TiHTTPHelper.m */; };
+		B6B59FAC188F16CB00F2646F /* TiHTTPPostForm.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59FA6188F16CB00F2646F /* TiHTTPPostForm.m */; };
+		B6B59FAD188F16CB00F2646F /* TiHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59FA8188F16CB00F2646F /* TiHTTPRequest.m */; };
+		B6B59FAE188F16CB00F2646F /* TiHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B59FAA188F16CB00F2646F /* TiHTTPResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,40 +68,9 @@
 		B63510B3188A2E670086BDC8 /* TiTestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiTestsViewController.m; sourceTree = "<group>"; };
 		B63510B5188A31850086BDC8 /* h.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = h.h; sourceTree = "<group>"; };
 		B63510B6188A32EA0086BDC8 /* h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = h.m; sourceTree = "<group>"; };
-		B63510BB188B74130086BDC8 /* TiSimpleGetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiSimpleGetViewController.h; path = tests/TiSimpleGetViewController.h; sourceTree = "<group>"; };
-		B63510BC188B74130086BDC8 /* TiSimpleGetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiSimpleGetViewController.m; path = tests/TiSimpleGetViewController.m; sourceTree = "<group>"; };
-		B63510BD188B74130086BDC8 /* TiSimpleGetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiSimpleGetViewController.xib; path = tests/TiSimpleGetViewController.xib; sourceTree = "<group>"; };
-		B63510C1188B7BAC0086BDC8 /* TiPostFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostFormViewController.h; path = tests/TiPostFormViewController.h; sourceTree = "<group>"; };
-		B63510C2188B7BAC0086BDC8 /* TiPostFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostFormViewController.m; path = tests/TiPostFormViewController.m; sourceTree = "<group>"; };
-		B63510C3188B7BAC0086BDC8 /* TiPostFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostFormViewController.xib; path = tests/TiPostFormViewController.xib; sourceTree = "<group>"; };
-		B6528BF5188D963A00775C2A /* TiGetHeadersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiGetHeadersViewController.h; sourceTree = "<group>"; };
-		B6528BF6188D963A00775C2A /* TiGetHeadersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiGetHeadersViewController.m; sourceTree = "<group>"; };
-		B6528BF7188D963A00775C2A /* TiGetHeadersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiGetHeadersViewController.xib; sourceTree = "<group>"; };
 		B6528BFB188DA13500775C2A /* TiWebColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiWebColor.h; path = utils/TiWebColor.h; sourceTree = "<group>"; };
 		B6528BFC188DA13500775C2A /* TiWebColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiWebColor.m; path = utils/TiWebColor.m; sourceTree = "<group>"; };
-		B6528BFE188DB82C00775C2A /* TiSynchronousViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiSynchronousViewController.h; sourceTree = "<group>"; };
-		B6528BFF188DB82C00775C2A /* TiSynchronousViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiSynchronousViewController.m; sourceTree = "<group>"; };
-		B6528C00188DB82C00775C2A /* TiSynchronousViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiSynchronousViewController.xib; sourceTree = "<group>"; };
-		B676F0B9188B86090095B9BD /* TiBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiBaseViewController.h; sourceTree = "<group>"; };
-		B676F0BA188B86090095B9BD /* TiBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiBaseViewController.m; sourceTree = "<group>"; };
-		B676F0BC188B93B50095B9BD /* TiPostImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiPostImageViewController.h; sourceTree = "<group>"; };
-		B676F0BD188B93B50095B9BD /* TiPostImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiPostImageViewController.m; sourceTree = "<group>"; };
-		B676F0BE188B93B50095B9BD /* TiPostImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiPostImageViewController.xib; sourceTree = "<group>"; };
 		B676F0C1188B948B0095B9BD /* photoDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoDefault.png; sourceTree = "<group>"; };
-		B676F0C3188C8C7E0095B9BD /* TiPostImageFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiPostImageFormViewController.h; sourceTree = "<group>"; };
-		B676F0C4188C8C7E0095B9BD /* TiPostImageFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiPostImageFormViewController.m; sourceTree = "<group>"; };
-		B676F0C5188C8C7E0095B9BD /* TiPostImageFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiPostImageFormViewController.xib; sourceTree = "<group>"; };
-		B676F0C8188CB3850095B9BD /* TiPostJsonStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostJsonStringViewController.h; path = tests/TiPostJsonStringViewController.h; sourceTree = "<group>"; };
-		B676F0C9188CB3850095B9BD /* TiPostJsonStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostJsonStringViewController.m; path = tests/TiPostJsonStringViewController.m; sourceTree = "<group>"; };
-		B676F0CA188CB3850095B9BD /* TiPostJsonStringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostJsonStringViewController.xib; path = tests/TiPostJsonStringViewController.xib; sourceTree = "<group>"; };
-		B676F0CD188CC06F0095B9BD /* TiGetProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiGetProgressViewController.h; path = tests/TiGetProgressViewController.h; sourceTree = "<group>"; };
-		B676F0CE188CC06F0095B9BD /* TiGetProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiGetProgressViewController.m; path = tests/TiGetProgressViewController.m; sourceTree = "<group>"; };
-		B676F0CF188CC06F0095B9BD /* TiGetProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiGetProgressViewController.xib; path = tests/TiGetProgressViewController.xib; sourceTree = "<group>"; };
-		B6A19811188DD19500781FFA /* TiAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAuthViewController.h; path = tests/TiAuthViewController.h; sourceTree = "<group>"; };
-		B6A19812188DD19500781FFA /* TiAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAuthViewController.m; path = tests/TiAuthViewController.m; sourceTree = "<group>"; };
-		B6A19813188DD19500781FFA /* TiAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiAuthViewController.xib; path = tests/TiAuthViewController.xib; sourceTree = "<group>"; };
-		B6A19816188DDBD300781FFA /* TiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiHelper.h; sourceTree = "<group>"; };
-		B6A19817188DDBD300781FFA /* TiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiHelper.m; sourceTree = "<group>"; };
 		B6A202041880746E0022558E /* HTTPClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A202071880746E0022558E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6A202091880746E0022558E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,12 +87,46 @@
 		B6A2022E1880746F0022558E /* HTTPClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTTPClientTests-Info.plist"; sourceTree = "<group>"; };
 		B6A202301880746F0022558E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6A202321880746F0022558E /* HTTPClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClientTests.m; sourceTree = "<group>"; };
-		B6A202A7188877D80022558E /* TiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiRequest.h; sourceTree = "<group>"; };
-		B6A202A8188877D80022558E /* TiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiRequest.m; sourceTree = "<group>"; };
-		B6A202AA18887B590022558E /* TiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiResponse.h; sourceTree = "<group>"; };
-		B6A202AB18887B5A0022558E /* TiResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiResponse.m; sourceTree = "<group>"; };
-		B6A202AD1889E18D0022558E /* TiForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiForm.h; sourceTree = "<group>"; };
-		B6A202AE1889E18D0022558E /* TiForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiForm.m; sourceTree = "<group>"; };
+		B6B59F6E188F15F300F2646F /* TiAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAuthViewController.h; path = tests/TiAuthViewController.h; sourceTree = "<group>"; };
+		B6B59F6F188F15F300F2646F /* TiAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAuthViewController.m; path = tests/TiAuthViewController.m; sourceTree = "<group>"; };
+		B6B59F70188F15F300F2646F /* TiAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiAuthViewController.xib; path = tests/TiAuthViewController.xib; sourceTree = "<group>"; };
+		B6B59F71188F15F300F2646F /* TiBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiBaseViewController.h; path = tests/TiBaseViewController.h; sourceTree = "<group>"; };
+		B6B59F72188F15F300F2646F /* TiBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiBaseViewController.m; path = tests/TiBaseViewController.m; sourceTree = "<group>"; };
+		B6B59F73188F15F300F2646F /* TiGetHeadersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiGetHeadersViewController.h; path = tests/TiGetHeadersViewController.h; sourceTree = "<group>"; };
+		B6B59F74188F15F300F2646F /* TiGetHeadersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiGetHeadersViewController.m; path = tests/TiGetHeadersViewController.m; sourceTree = "<group>"; };
+		B6B59F75188F15F300F2646F /* TiGetHeadersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiGetHeadersViewController.xib; path = tests/TiGetHeadersViewController.xib; sourceTree = "<group>"; };
+		B6B59F76188F15F300F2646F /* TiGetProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiGetProgressViewController.h; path = tests/TiGetProgressViewController.h; sourceTree = "<group>"; };
+		B6B59F77188F15F300F2646F /* TiGetProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiGetProgressViewController.m; path = tests/TiGetProgressViewController.m; sourceTree = "<group>"; };
+		B6B59F78188F15F300F2646F /* TiGetProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiGetProgressViewController.xib; path = tests/TiGetProgressViewController.xib; sourceTree = "<group>"; };
+		B6B59F79188F15F300F2646F /* TiPostFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostFormViewController.h; path = tests/TiPostFormViewController.h; sourceTree = "<group>"; };
+		B6B59F7A188F15F300F2646F /* TiPostFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostFormViewController.m; path = tests/TiPostFormViewController.m; sourceTree = "<group>"; };
+		B6B59F7B188F15F300F2646F /* TiPostFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostFormViewController.xib; path = tests/TiPostFormViewController.xib; sourceTree = "<group>"; };
+		B6B59F7C188F15F300F2646F /* TiPostImageFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostImageFormViewController.h; path = tests/TiPostImageFormViewController.h; sourceTree = "<group>"; };
+		B6B59F7D188F15F300F2646F /* TiPostImageFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostImageFormViewController.m; path = tests/TiPostImageFormViewController.m; sourceTree = "<group>"; };
+		B6B59F7E188F15F300F2646F /* TiPostImageFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostImageFormViewController.xib; path = tests/TiPostImageFormViewController.xib; sourceTree = "<group>"; };
+		B6B59F7F188F15F300F2646F /* TiPostImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostImageViewController.h; path = tests/TiPostImageViewController.h; sourceTree = "<group>"; };
+		B6B59F80188F15F300F2646F /* TiPostImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostImageViewController.m; path = tests/TiPostImageViewController.m; sourceTree = "<group>"; };
+		B6B59F81188F15F300F2646F /* TiPostImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostImageViewController.xib; path = tests/TiPostImageViewController.xib; sourceTree = "<group>"; };
+		B6B59F82188F15F300F2646F /* TiPostJsonStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiPostJsonStringViewController.h; path = tests/TiPostJsonStringViewController.h; sourceTree = "<group>"; };
+		B6B59F83188F15F300F2646F /* TiPostJsonStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiPostJsonStringViewController.m; path = tests/TiPostJsonStringViewController.m; sourceTree = "<group>"; };
+		B6B59F84188F15F300F2646F /* TiPostJsonStringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiPostJsonStringViewController.xib; path = tests/TiPostJsonStringViewController.xib; sourceTree = "<group>"; };
+		B6B59F85188F15F300F2646F /* TiRedirectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiRedirectViewController.h; path = tests/TiRedirectViewController.h; sourceTree = "<group>"; };
+		B6B59F86188F15F300F2646F /* TiRedirectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiRedirectViewController.m; path = tests/TiRedirectViewController.m; sourceTree = "<group>"; };
+		B6B59F87188F15F300F2646F /* TiRedirectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiRedirectViewController.xib; path = tests/TiRedirectViewController.xib; sourceTree = "<group>"; };
+		B6B59F88188F15F300F2646F /* TiSimpleGetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiSimpleGetViewController.h; path = tests/TiSimpleGetViewController.h; sourceTree = "<group>"; };
+		B6B59F89188F15F300F2646F /* TiSimpleGetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiSimpleGetViewController.m; path = tests/TiSimpleGetViewController.m; sourceTree = "<group>"; };
+		B6B59F8A188F15F300F2646F /* TiSimpleGetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiSimpleGetViewController.xib; path = tests/TiSimpleGetViewController.xib; sourceTree = "<group>"; };
+		B6B59F8B188F15F300F2646F /* TiSynchronousViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiSynchronousViewController.h; path = tests/TiSynchronousViewController.h; sourceTree = "<group>"; };
+		B6B59F8C188F15F300F2646F /* TiSynchronousViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiSynchronousViewController.m; path = tests/TiSynchronousViewController.m; sourceTree = "<group>"; };
+		B6B59F8D188F15F300F2646F /* TiSynchronousViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TiSynchronousViewController.xib; path = tests/TiSynchronousViewController.xib; sourceTree = "<group>"; };
+		B6B59FA3188F16CB00F2646F /* TiHTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiHTTPHelper.h; path = TiHTTPClient/TiHTTPHelper.h; sourceTree = "<group>"; };
+		B6B59FA4188F16CB00F2646F /* TiHTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiHTTPHelper.m; path = TiHTTPClient/TiHTTPHelper.m; sourceTree = "<group>"; };
+		B6B59FA5188F16CB00F2646F /* TiHTTPPostForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiHTTPPostForm.h; path = TiHTTPClient/TiHTTPPostForm.h; sourceTree = "<group>"; };
+		B6B59FA6188F16CB00F2646F /* TiHTTPPostForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiHTTPPostForm.m; path = TiHTTPClient/TiHTTPPostForm.m; sourceTree = "<group>"; };
+		B6B59FA7188F16CB00F2646F /* TiHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiHTTPRequest.h; path = TiHTTPClient/TiHTTPRequest.h; sourceTree = "<group>"; };
+		B6B59FA8188F16CB00F2646F /* TiHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiHTTPRequest.m; path = TiHTTPClient/TiHTTPRequest.m; sourceTree = "<group>"; };
+		B6B59FA9188F16CB00F2646F /* TiHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiHTTPResponse.h; path = TiHTTPClient/TiHTTPResponse.h; sourceTree = "<group>"; };
+		B6B59FAA188F16CB00F2646F /* TiHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiHTTPResponse.m; path = TiHTTPClient/TiHTTPResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,35 +157,38 @@
 		B63510C0188B76370086BDC8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B676F0C8188CB3850095B9BD /* TiPostJsonStringViewController.h */,
-				B676F0C9188CB3850095B9BD /* TiPostJsonStringViewController.m */,
-				B676F0CA188CB3850095B9BD /* TiPostJsonStringViewController.xib */,
-				B63510BB188B74130086BDC8 /* TiSimpleGetViewController.h */,
-				B63510BC188B74130086BDC8 /* TiSimpleGetViewController.m */,
-				B63510BD188B74130086BDC8 /* TiSimpleGetViewController.xib */,
-				B63510C1188B7BAC0086BDC8 /* TiPostFormViewController.h */,
-				B63510C2188B7BAC0086BDC8 /* TiPostFormViewController.m */,
-				B63510C3188B7BAC0086BDC8 /* TiPostFormViewController.xib */,
-				B676F0B9188B86090095B9BD /* TiBaseViewController.h */,
-				B676F0BA188B86090095B9BD /* TiBaseViewController.m */,
-				B676F0BC188B93B50095B9BD /* TiPostImageViewController.h */,
-				B676F0BD188B93B50095B9BD /* TiPostImageViewController.m */,
-				B676F0BE188B93B50095B9BD /* TiPostImageViewController.xib */,
-				B676F0C3188C8C7E0095B9BD /* TiPostImageFormViewController.h */,
-				B676F0C4188C8C7E0095B9BD /* TiPostImageFormViewController.m */,
-				B676F0C5188C8C7E0095B9BD /* TiPostImageFormViewController.xib */,
-				B676F0CD188CC06F0095B9BD /* TiGetProgressViewController.h */,
-				B676F0CE188CC06F0095B9BD /* TiGetProgressViewController.m */,
-				B676F0CF188CC06F0095B9BD /* TiGetProgressViewController.xib */,
-				B6528BF5188D963A00775C2A /* TiGetHeadersViewController.h */,
-				B6528BF6188D963A00775C2A /* TiGetHeadersViewController.m */,
-				B6528BF7188D963A00775C2A /* TiGetHeadersViewController.xib */,
-				B6528BFE188DB82C00775C2A /* TiSynchronousViewController.h */,
-				B6528BFF188DB82C00775C2A /* TiSynchronousViewController.m */,
-				B6528C00188DB82C00775C2A /* TiSynchronousViewController.xib */,
-				B6A19811188DD19500781FFA /* TiAuthViewController.h */,
-				B6A19812188DD19500781FFA /* TiAuthViewController.m */,
-				B6A19813188DD19500781FFA /* TiAuthViewController.xib */,
+				B6B59F6E188F15F300F2646F /* TiAuthViewController.h */,
+				B6B59F6F188F15F300F2646F /* TiAuthViewController.m */,
+				B6B59F70188F15F300F2646F /* TiAuthViewController.xib */,
+				B6B59F71188F15F300F2646F /* TiBaseViewController.h */,
+				B6B59F72188F15F300F2646F /* TiBaseViewController.m */,
+				B6B59F73188F15F300F2646F /* TiGetHeadersViewController.h */,
+				B6B59F74188F15F300F2646F /* TiGetHeadersViewController.m */,
+				B6B59F75188F15F300F2646F /* TiGetHeadersViewController.xib */,
+				B6B59F76188F15F300F2646F /* TiGetProgressViewController.h */,
+				B6B59F77188F15F300F2646F /* TiGetProgressViewController.m */,
+				B6B59F78188F15F300F2646F /* TiGetProgressViewController.xib */,
+				B6B59F79188F15F300F2646F /* TiPostFormViewController.h */,
+				B6B59F7A188F15F300F2646F /* TiPostFormViewController.m */,
+				B6B59F7B188F15F300F2646F /* TiPostFormViewController.xib */,
+				B6B59F7C188F15F300F2646F /* TiPostImageFormViewController.h */,
+				B6B59F7D188F15F300F2646F /* TiPostImageFormViewController.m */,
+				B6B59F7E188F15F300F2646F /* TiPostImageFormViewController.xib */,
+				B6B59F7F188F15F300F2646F /* TiPostImageViewController.h */,
+				B6B59F80188F15F300F2646F /* TiPostImageViewController.m */,
+				B6B59F81188F15F300F2646F /* TiPostImageViewController.xib */,
+				B6B59F82188F15F300F2646F /* TiPostJsonStringViewController.h */,
+				B6B59F83188F15F300F2646F /* TiPostJsonStringViewController.m */,
+				B6B59F84188F15F300F2646F /* TiPostJsonStringViewController.xib */,
+				B6B59F85188F15F300F2646F /* TiRedirectViewController.h */,
+				B6B59F86188F15F300F2646F /* TiRedirectViewController.m */,
+				B6B59F87188F15F300F2646F /* TiRedirectViewController.xib */,
+				B6B59F88188F15F300F2646F /* TiSimpleGetViewController.h */,
+				B6B59F89188F15F300F2646F /* TiSimpleGetViewController.m */,
+				B6B59F8A188F15F300F2646F /* TiSimpleGetViewController.xib */,
+				B6B59F8B188F15F300F2646F /* TiSynchronousViewController.h */,
+				B6B59F8C188F15F300F2646F /* TiSynchronousViewController.m */,
+				B6B59F8D188F15F300F2646F /* TiSynchronousViewController.xib */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 		B6528BFA188DA11B00775C2A /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				B676F0C1188B948B0095B9BD /* photoDefault.png */,
 				B6528BFB188DA13500775C2A /* TiWebColor.h */,
 				B6528BFC188DA13500775C2A /* TiWebColor.m */,
 			);
@@ -228,25 +237,17 @@
 		B6A2020D1880746E0022558E /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				B6B59F5E188F159700F2646F /* TiHTTPClient */,
 				B6528BFA188DA11B00775C2A /* utils */,
-				B676F0C1188B948B0095B9BD /* photoDefault.png */,
 				B63510C0188B76370086BDC8 /* Tests */,
 				B6A202161880746E0022558E /* TiAppDelegate.h */,
 				B6A202171880746E0022558E /* TiAppDelegate.m */,
 				B6A2021F1880746E0022558E /* Images.xcassets */,
 				B6A2020E1880746E0022558E /* Supporting Files */,
-				B6A202A7188877D80022558E /* TiRequest.h */,
-				B6A202A8188877D80022558E /* TiRequest.m */,
-				B6A202AA18887B590022558E /* TiResponse.h */,
-				B6A202AB18887B5A0022558E /* TiResponse.m */,
-				B6A202AD1889E18D0022558E /* TiForm.h */,
-				B6A202AE1889E18D0022558E /* TiForm.m */,
 				B63510B2188A2E670086BDC8 /* TiTestsViewController.h */,
 				B63510B3188A2E670086BDC8 /* TiTestsViewController.m */,
 				B63510B5188A31850086BDC8 /* h.h */,
 				B63510B6188A32EA0086BDC8 /* h.m */,
-				B6A19816188DDBD300781FFA /* TiHelper.h */,
-				B6A19817188DDBD300781FFA /* TiHelper.m */,
 			);
 			path = HTTPClient;
 			sourceTree = "<group>";
@@ -278,6 +279,21 @@
 				B6A2022F1880746F0022558E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6B59F5E188F159700F2646F /* TiHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				B6B59FA3188F16CB00F2646F /* TiHTTPHelper.h */,
+				B6B59FA4188F16CB00F2646F /* TiHTTPHelper.m */,
+				B6B59FA5188F16CB00F2646F /* TiHTTPPostForm.h */,
+				B6B59FA6188F16CB00F2646F /* TiHTTPPostForm.m */,
+				B6B59FA7188F16CB00F2646F /* TiHTTPRequest.h */,
+				B6B59FA8188F16CB00F2646F /* TiHTTPRequest.m */,
+				B6B59FA9188F16CB00F2646F /* TiHTTPResponse.h */,
+				B6B59FAA188F16CB00F2646F /* TiHTTPResponse.m */,
+			);
+			name = TiHTTPClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,18 +373,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B676F0C7188C8C7E0095B9BD /* TiPostImageFormViewController.xib in Resources */,
 				B6A202201880746E0022558E /* Images.xcassets in Resources */,
+				B6B59F98188F15F300F2646F /* TiPostImageFormViewController.xib in Resources */,
+				B6B59FA2188F15F300F2646F /* TiSynchronousViewController.xib in Resources */,
+				B6B59F9E188F15F300F2646F /* TiRedirectViewController.xib in Resources */,
+				B6B59F9C188F15F300F2646F /* TiPostJsonStringViewController.xib in Resources */,
+				B6B59F92188F15F300F2646F /* TiGetHeadersViewController.xib in Resources */,
 				B6A202121880746E0022558E /* InfoPlist.strings in Resources */,
-				B6A19815188DD19500781FFA /* TiAuthViewController.xib in Resources */,
+				B6B59F94188F15F300F2646F /* TiGetProgressViewController.xib in Resources */,
+				B6B59F96188F15F300F2646F /* TiPostFormViewController.xib in Resources */,
+				B6B59FA0188F15F300F2646F /* TiSimpleGetViewController.xib in Resources */,
 				B676F0C2188B948B0095B9BD /* photoDefault.png in Resources */,
-				B676F0D1188CC0700095B9BD /* TiGetProgressViewController.xib in Resources */,
-				B6528BF9188D963A00775C2A /* TiGetHeadersViewController.xib in Resources */,
-				B63510BF188B74130086BDC8 /* TiSimpleGetViewController.xib in Resources */,
-				B676F0C0188B93B50095B9BD /* TiPostImageViewController.xib in Resources */,
-				B6528C02188DB82C00775C2A /* TiSynchronousViewController.xib in Resources */,
-				B676F0CC188CB3850095B9BD /* TiPostJsonStringViewController.xib in Resources */,
-				B63510C5188B7BAC0086BDC8 /* TiPostFormViewController.xib in Resources */,
+				B6B59F8F188F15F300F2646F /* TiAuthViewController.xib in Resources */,
+				B6B59F9A188F15F300F2646F /* TiPostImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,25 +404,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B676F0BB188B86090095B9BD /* TiBaseViewController.m in Sources */,
-				B6A19814188DD19500781FFA /* TiAuthViewController.m in Sources */,
+				B6B59FAC188F16CB00F2646F /* TiHTTPPostForm.m in Sources */,
 				B6528BFD188DA13500775C2A /* TiWebColor.m in Sources */,
 				B6A202141880746E0022558E /* main.m in Sources */,
-				B6528C01188DB82C00775C2A /* TiSynchronousViewController.m in Sources */,
-				B676F0CB188CB3850095B9BD /* TiPostJsonStringViewController.m in Sources */,
+				B6B59FAE188F16CB00F2646F /* TiHTTPResponse.m in Sources */,
 				B6A202181880746E0022558E /* TiAppDelegate.m in Sources */,
 				B63510B4188A2E670086BDC8 /* TiTestsViewController.m in Sources */,
-				B676F0BF188B93B50095B9BD /* TiPostImageViewController.m in Sources */,
+				B6B59F91188F15F300F2646F /* TiGetHeadersViewController.m in Sources */,
+				B6B59F8E188F15F300F2646F /* TiAuthViewController.m in Sources */,
+				B6B59F90188F15F300F2646F /* TiBaseViewController.m in Sources */,
+				B6B59FAB188F16CB00F2646F /* TiHTTPHelper.m in Sources */,
+				B6B59F99188F15F300F2646F /* TiPostImageViewController.m in Sources */,
+				B6B59FAD188F16CB00F2646F /* TiHTTPRequest.m in Sources */,
+				B6B59F97188F15F300F2646F /* TiPostImageFormViewController.m in Sources */,
+				B6B59F93188F15F300F2646F /* TiGetProgressViewController.m in Sources */,
 				B63510B9188A331A0086BDC8 /* h.m in Sources */,
-				B63510C4188B7BAC0086BDC8 /* TiPostFormViewController.m in Sources */,
-				B63510BE188B74130086BDC8 /* TiSimpleGetViewController.m in Sources */,
-				B676F0D0188CC0700095B9BD /* TiGetProgressViewController.m in Sources */,
-				B6528BF8188D963A00775C2A /* TiGetHeadersViewController.m in Sources */,
-				B6A202AF1889E18D0022558E /* TiForm.m in Sources */,
-				B6A202AC18887B5A0022558E /* TiResponse.m in Sources */,
-				B6A19818188DDBD300781FFA /* TiHelper.m in Sources */,
-				B6A202A9188877D80022558E /* TiRequest.m in Sources */,
-				B676F0C6188C8C7E0095B9BD /* TiPostImageFormViewController.m in Sources */,
+				B6B59F9D188F15F300F2646F /* TiRedirectViewController.m in Sources */,
+				B6B59F9F188F15F300F2646F /* TiSimpleGetViewController.m in Sources */,
+				B6B59F95188F15F300F2646F /* TiPostFormViewController.m in Sources */,
+				B6B59F9B188F15F300F2646F /* TiPostJsonStringViewController.m in Sources */,
+				B6B59FA1188F15F300F2646F /* TiSynchronousViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +547,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTTPClient/HTTPClient-Prefix.pch";
 				INFOPLIST_FILE = "HTTPClient/HTTPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -543,7 +563,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTTPClient/HTTPClient-Prefix.pch";
 				INFOPLIST_FILE = "HTTPClient/HTTPClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
