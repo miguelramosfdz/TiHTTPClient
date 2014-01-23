@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4D6EE7CF-9E40-404F-A350-A1C64CB7FC0E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HTTPClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>369A1728-184B-4F85-9A21-B4E1B7503E54</key>
+		<string>ssh://github.com/pec1985/TiHTTPClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HTTPClient.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>369A1728-184B-4F85-9A21-B4E1B7503E54</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pec1985/TiHTTPClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>369A1728-184B-4F85-9A21-B4E1B7503E54</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>369A1728-184B-4F85-9A21-B4E1B7503E54</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HTTPClient</string>
+		</dict>
+	</array>
+</dict>
+</plist>
