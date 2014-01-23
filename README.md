@@ -1,7 +1,6 @@
-Content of the source is inside [HTTPClient/TiHTTPClient](https://github.com/pec1985/TiHTTPClient/tree/master/HTTPClient/TiHTTPClient)  
-Tests are inside [HTTPClient/tests](https://github.com/pec1985/TiHTTPClient/tree/master/HTTPClient/tests)  
-Each test is a UIViewController subclass of TiBaseViewController. The UI is in each corresponding xib file.
-
+Content of the source is inside [src/TiHTTPClient](https://github.com/pec1985/TiHTTPClient/tree/master/src/TiHTTPClient)  
+Native Tests are inside [Native/HTTPClient/tests](https://github.com/pec1985/TiHTTPClient/tree/master/Native/HTTPClient/tests)  
+Titanium Tests are inside [Titanium/example/tests](https://github.com/pec1985/TiHTTPClient/tree/master/Titanium/example/tests)  
 
 ### Components
 **TiHTTPRequest** - Responsible for the http request  
@@ -10,7 +9,10 @@ Each test is a UIViewController subclass of TiBaseViewController. The UI is in e
 **TiHTTPResponse** - Holds all the response information from the request  
 **TiHTTPHelper** - Helper class with some handy functions
 
-### Examples:
+### Note:
+Titanium API will be identical to the Ti.Network.HTTPClient
+
+### Native Examples:
 #### GET Request:
 
     -(void)sendRequest
